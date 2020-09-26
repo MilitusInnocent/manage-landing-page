@@ -1,8 +1,12 @@
 import React from 'react';
 
 const Links = () => {
+    const links = ['Home', 'Pricing', 'Products', 'About Us', 'Careers', 'Community', 'Privacy Policy'];
+
     return (
-        <div>Links</div>
+        <ul className="links__list">
+            
+        </ul>
     )
 }
 
