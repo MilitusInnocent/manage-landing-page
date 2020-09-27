@@ -1,30 +1,35 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Pagination } from 'swiper';
 import ali from '../images/avatar-ali.png';
 import anisha from '../images/avatar-anisha.png';
 import richard from '../images/avatar-richard.png';
 import shanai from '../images/avatar-shanai.png';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination } from 'swiper';
+import { SliderCard } from './';
 
 //import 'swiper/swiper.scss';
 //import 'swiper/components/pagination/pagination.scss';
 
 
-import { SliderCard } from './';
 
 SwiperCore.use([Pagination]);
 
 const Slider = () => {
     return (
         <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+            spaceBetween={0}
+            slidesPerView={1}
+            pagination={{ clickable: true, type: 'bullets' }}
+            breakpoints={{
+                550: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                930: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }}
         >
             <SwiperSlide>
                 <SliderCard 
