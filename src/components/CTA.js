@@ -1,8 +1,12 @@
 import React from 'react';
+import {Button} from './';
 
 const CTA = () => {
     return (
-        <div>CTA</div>
+        <div>
+            <p>Simplify how your team works today.</p>
+            <Button color='white' text='Get Started' />
+        </div>
     )
 }
 
