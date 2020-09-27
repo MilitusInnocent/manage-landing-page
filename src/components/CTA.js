@@ -1,13 +1,11 @@
 import React from 'react';
-import {Button} from './';
+import { Button } from './';
 
-const CTA = () => {
-    return (
-        <div>
-            <p>Simplify how your team works today.</p>
-            <Button color='white' text='Get Started' />
-        </div>
-    )
-}
+const CTA = () => (
+    <div className="cta">
+        <h2 className="cta__heading">Simplify how your team works today.</h2>
+        <Button color='white' text='Get Started' />
+    </div>
+)
 
 export default CTA
