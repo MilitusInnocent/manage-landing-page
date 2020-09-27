@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Header, About, Slider, CTA, Footer } from './components';
+import './App.scss';
 
 const App = () => {
   return (
@@ -7,7 +8,7 @@ const App = () => {
      <Navbar/>
      <Header/>
      <About/>
-     <Slider />
+     <Slider/>
      <CTA/>
      <Footer/>
     </div>
