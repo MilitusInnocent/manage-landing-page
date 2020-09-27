@@ -4,14 +4,13 @@ import companyLogo from '../images/logo.svg';
 
 const Navbar = () => {
     return (
-        <div>
-            <img className="navbar__logo" src={companyLogo} alt="company logo" onClick={closeAll} />
+        <nav className="navbar">
+            <img className="navbar__logo" src={companyLogo} alt="Manage company logo" />
             <div className="navbar__links">
-                <Links/>
+                <Links />
             </div>
-            <Button/>
-        </div>
-        
+            <Button color='orange' text='Get started' />
+        </nav> 
     )
 }
 
