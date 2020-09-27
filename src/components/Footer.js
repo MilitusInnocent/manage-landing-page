@@ -5,7 +5,7 @@ import logoWhite from '../images/footer-logo.svg';
 const Footer = () => {
     return (
         <div className="footer">
-            <img className="footer__logo" src={logoWhite} alt="company logo" />
+            <img className="footer__logo" src={logoWhite} alt="Manage company logo" />
 
             <div className="footer__social__logos">
                 <a href="#" aria-label="Facebook icon">
@@ -26,12 +26,19 @@ const Footer = () => {
             </div>
 
             <div className="footer__links">
-                <Links/>
+                <Links />
             </div>
 
-            <Button color='orange' text='Go' />
-            
-            <p className="footer__copyright">Copyright 2020. All Rights Reserved</p>
+            <form className="footer__form">
+                <input
+                    placeholder="Updates in your inbox..."
+                    aria-label="Enter valid email address here"
+                    type="email"
+                />
+                <Button color='orange' text='Go' type="submit" />
+            </form>
+
+            <small className="footer__copyright">Copyright 2020. All Rights Reserved</small>
         </div>
     )
 }
