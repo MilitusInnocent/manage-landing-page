@@ -5,7 +5,13 @@ const Links = () => {
 
     return (
         <ul className="links__list">
-            
+             {links.map((link, i) => (
+                <li className="link" key={i}>
+                    <a href='#'>
+                        {link}
+                    </a>
+                </li> 
+            ))}
         </ul>
     )
 }
