@@ -1,17 +1,17 @@
 import React from 'react';
 
-const SliderCard = ({image, name, text}) => {
+const SliderCard = ({ image, name, quote }) => {
     return (
-            <div className="slider__card">
-                <div className="slider__card__image__container">
-                    <img src={image} alt=''/>
-                </div>
-                <div className="slider__card__textbox">
-                    <p className="slider__card__textbox__name">By {name}</p>
-                    <p className="slider__card__textbox__text">{text}</p>
-                </div>
+        <div className="slider__card">
+            <div className="slider__card__image__container">
+                <img src={image} alt={`${name} avatar`} />
             </div>
-    )
+            <div className="slider__card__textbox">
+                <h5 className="slider__card__textbox__name">{name}</h5>
+                <p className="slider__card__textbox__testimonial">{quote}</p>
+            </div>
+        </div>
+)
 }
 
 export default SliderCard
