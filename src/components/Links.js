@@ -5,8 +5,8 @@ const Links = () => {
 
     return (
         <ul className="links__list">
-             {links.map((link, i) => (
-                <li className="link" key={i}>
+             {links.map(link => (
+                <li className="links__list__item" key={link}>
                     <a href='#'>
                         {link}
                     </a>
