@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './';
-import heroImage from '../images/illustration-info.svg';
+import heroImage from '../images/illustration-intro.svg';
 
 const Header = () => (
     <div className="header">
