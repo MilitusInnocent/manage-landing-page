@@ -1,0 +1,42 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__textbox {
+
+        &__heading {
+            color: hsl(228, 39%, 23%);
+            padding-bottom: 20px;
+        }
+
+        &__subheading {
+            padding: 20px 10vw 20px 0;
+            color:  hsl(227, 12%, 61%);
+            line-height: 20px;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+
+    &__card__container {
+        display: flex;
+        flex-direction: column;
+        
+        .about__card {
+            
+            &__number {
+                margin-right: 30px;
+                width: 10px;
+            }
+
+            &__heading {
+                margin: 0 50px 0 0;
+            }
+
+            &__subheading {
+                margin: 0 50px 0 0;
+            }
+        }
+    }
+}
