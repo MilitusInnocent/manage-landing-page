@@ -1,0 +1,49 @@
+.testimonial__section {    
+    &__heading {
+        text-align: center;
+    }
+
+    .swiper-container {
+        margin: 35px 0 50px;
+
+        .swiper-pagination {
+            display: none;
+        }
+
+        .swiper-slide {
+            background-color: $light-gray;
+            border-radius: 5px;
+            padding: 0 15px;
+            margin-top: 45px;
+
+            .slider__card {          
+                margin-bottom: 10px;
+                height: 250px;    
+                        
+                &__image__container {
+                    display: block;
+                    width: min-content;
+                    margin: -45px auto 0;
+
+                    img {
+                        height: 90px; 
+                        width: 90px;
+                    }
+                }
+
+                &__textbox {
+                    text-align: center;
+
+                    &__name {
+                        margin: 10px 0 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn--orange {
+        display: block;
+        margin: 0 auto;
+    }
+}
