@@ -25,11 +25,11 @@
 
     &--white {
         background-color: white;
-        border: white;
+        border-color: white;
         color: $orange;
 
         &:hover {
-            background-color: $orange;
+            background-color: transparent;
             color: white;
         }
     }
