@@ -1,0 +1,27 @@
+.cta {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $orange;
+    color: white;
+    width: calc(100% + 16vw);
+    left: -8vw;
+    padding: 70px 8vw;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-image: url(../images/bg-simplify-section-desktop.svg);
+    }
+
+    &__heading {
+        max-width: 50%;
+    }
+
+    .btn--white {
+        position: relative;
+        z-index: 3;
+    }
+}
