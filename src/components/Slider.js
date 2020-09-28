@@ -21,11 +21,11 @@ const Slider = () => {
                 slidesPerView={1}
                 pagination={{ clickable: true, type: 'bullets' }}
                 breakpoints={{
-                    550: {
+                    725: {
                         slidesPerView: 2,
                         spaceBetween: 30,
                     },
-                    930: {
+                    1080: {
                         slidesPerView: 3,
                         spaceBetween: 30,
                     },
