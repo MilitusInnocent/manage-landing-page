@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    
+    &__links {
+        width: 40%;
+        
+        .links__list {
+            display: flex;
+            justify-content: space-between;
+
+            .links__list__item:hover {
+                color: hsl(227, 12%, 61%);
+            }
+
+            li {
+                &:nth-of-type(1), &:nth-of-type(7) {
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+}
