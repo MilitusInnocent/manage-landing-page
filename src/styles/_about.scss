@@ -33,4 +33,31 @@
             }
         }
     }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+
+        &__textbox {
+            padding-bottom: 40px;
+        }
+
+        .about__card {
+
+            &__heading {
+                font-size: 16px;
+                text-align: left;
+                background-color: hsl(13, 100%, 96%);
+                width: calc(100% + 16vw);
+                left: -8vw;
+                right: -8vw;
+            }
+
+            &__subheading {
+                margin: 0;
+                text-align: left;
+            }
+        }
+    }
 }
