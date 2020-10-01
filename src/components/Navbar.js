@@ -23,7 +23,7 @@ const Navbar = () => {
     }
 
     const handleMobileNavLinkClick = () => {
-        let innerMobileNavLinks = [...document.querySelectorAll('.link')].slice(7, 12);
+        let innerMobileNavLinks = [...document.querySelectorAll('.links__list__item')].slice(8, 13);
         
         innerMobileNavLinks.forEach(link => link.addEventListener('click', () => {
             closeAll();
@@ -35,16 +35,14 @@ const Navbar = () => {
         setMobileNavOpen(false);
     }
 
-
     return (
         <nav className="navbar">
             <div className={`overlay ${mobileNavOpen ? 'active' : ''}`} />
-            <img className="navbar__logo" src={companyLogo} alt="Manage company logo" onClick={closeAll}/>
+            <img className="navbar__logo" src={companyLogo} alt="Manage company logo" onClick={closeAll} />
             <div className="navbar__links">
                 <Links />
             </div>
             <Button color='orange' text='Get started' />
-
             <a 
                 ref={mobileNavbarBtnEl}
                 href="#" 
@@ -56,7 +54,7 @@ const Navbar = () => {
                 <img src={close} className={`close ${!mobileNavOpen ? 'spin' : ''}`} alt="X shape" onClick={handleNavClose} />
             </a>
             <div className={`navbar__mobile ${mobileNavOpen ? 'deployed' : ''}`} onClick={handleMobileNavLinkClick}>
-                <Links/>
+                <Links />
             </div>
         </nav> 
     )
