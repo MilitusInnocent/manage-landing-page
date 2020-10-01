@@ -36,6 +36,10 @@
                 &:nth-of-type(3) { grid-area: 3 / 1 / 4 / 2 }
                 &:nth-of-type(4) { grid-area: 4 / 1 / 5 / 2 }
             }
+
+            &__item:hover {
+                color: $orange;
+            }
         }
     }
 
