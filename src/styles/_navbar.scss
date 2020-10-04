@@ -80,6 +80,8 @@
             box-shadow: 0px 2px 4px 1px rgba(black, .15);
             z-index: 5;
 
+           
+
             .links__list {
                 margin: auto;
                 text-align: center;
@@ -104,10 +106,6 @@
             }
         }
 
-        img {
-            min-width: 100%;
-        }
-
         &__mobile__btn {
             display: flex;
 
@@ -120,7 +118,6 @@
 
             &.change {
                 & > * { position: fixed }
-                
                 .open { display: none }
                 .close { display: block }
             }
